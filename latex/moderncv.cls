@@ -46,9 +46,9 @@
 
 % font size options
 \newcommand\@ptsize{}
-\DeclareOption{10pt}{\renewcommand\@ptsize{0}}
-\DeclareOption{11pt}{\renewcommand\@ptsize{1}}
-\DeclareOption{12pt}{\renewcommand\@ptsize{2}}
+\DeclareOption{8pt}{\renewcommand\@ptsize{0}}
+\DeclareOption{9pt}{\renewcommand\@ptsize{1}}
+\DeclareOption{10pt}{\renewcommand\@ptsize{2}}
 
 % font type options
 \DeclareOption{sans}{\AtBeginDocument{\renewcommand{\familydefault}{\sfdefault}}}
@@ -59,7 +59,7 @@
 \DeclareOption{final}{\setlength\overfullrule{0pt}}
 
 % execute default options
-\ExecuteOptions{a4paper,11pt,final}
+\ExecuteOptions{a4paper,9pt,final}
 
 % process given options
 \ProcessOptions\relax
