@@ -1,0 +1,46 @@
+\documentclass{moderncv}
+\usepackage[utf8]{inputenc}
+% Uncomment next line to reproduce exactly the MWE image
+% \usepackage[margin=1cm,bmargin=3cm,paperwidth=15cm, paperheight=12cm]{geometry}
+\moderncvtheme[blue]{casual}
+
+\firstname{John}
+\familyname{Doe}
+\title{Curriculum vit\ae}
+\address{MyStreet, 24}{012345}
+\mobile{000 000 000}
+\phone{555 555 555}
+\fax{888 888 888}
+\email{johndoe@example.com}
+\homepage{http://example.com}
+\extrainfo{This a MWE for TeX.SX}
+\photo[64pt]{example-image}
+\quote{To work or not shouldn't be a question }
+
+% Letter Information 
+\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} 
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+\begin{document}
+{\fancyfoot[r]{}            % No page/lastapage in the letter
+\setcounter{page}{0}        % Change if letter is more than 1 page
+\makelettertitle            % Print letter title
+Lore ipum dolor             % Letter body
+sit amet, consectetuer 
+adiscipliging elit. 
+Up purus ... 
+
+\makeletterclosing          % Print letter signature
+\newpage 
+% this is the page "1/1" % (no number when total pages = 1)
+}% end of pages without page/lastapage} 
+\maketitle 
+\section{Academic titles}
+\cventry{2010--2012}{etcetera ...}{}{}{}{} 
+\newpage 
+% this is the page "2/2"
+\section{Experience}
+\cventry{2013--2015}{etcetera ...}{}{}{}{}
+\end{document}
